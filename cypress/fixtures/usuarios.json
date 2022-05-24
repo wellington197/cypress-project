@@ -1,0 +1,30 @@
+
+
+{
+    "email":"luke.ska@alura.com.br",
+    "fullname":"luke skywalker",
+    "userName":"luke",
+    "password":"skywolker"
+
+},
+{
+    "email":"mariajose@gmail.com.br",
+    "fullname":"Maria José",
+    "userName":"Maria",
+    "password":"mariajose"
+
+},
+{
+    "email":"fernanda@alura.com.br",
+    "fullname":"Fernanda Silva",
+    "userName":"fernanda",
+    "password":"fernandasilva"
+
+},
+{
+    "email":"pedro.lucas@hotmail.com.br",
+    "fullname":"Pedro Lucas",
+    "userName":"pedrolucas",
+    "password":"pedrolucas"
+
+}

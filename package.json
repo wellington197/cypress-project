@@ -1,0 +1,27 @@
+{
+  "name": "primeiro_projeto",
+  "version": "1.0.0",
+  "description": "meu primeiro projeto de testes Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellington197/cypress-project.git"
+  },
+  "author": "Wellington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wellington197/cypress-project/issues"
+  },
+  "homepage": "https://github.com/wellington197/cypress-project#readme",
+  "devDependencies": {
+    "cypress": "^9.6.1",
+    "mochawesome-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "D": "^1.0.0",
+    "mochawesome": "^7.1.3"
+  }
+}
