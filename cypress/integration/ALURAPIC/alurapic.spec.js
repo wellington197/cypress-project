@@ -54,15 +54,15 @@ describe('Login e registro de usuários no alura pic',()=>{
 
 
     //referenciar nosso novo arquivo. e buscar na pasta onde tem o Json
-    const usuarios=require('../../fixtures/usuarios.json')
-    it('Registra novo usuário',()=>{       
-        //verifica se na tag "a" contém o texto Register Now.
-        cy.registra('');
-        cy.contains('button', 'Register').click();
-        cy.contains('ap-vmessage','Must be lower case').should('be.visible');       
-        
-    })
+    const usuarios=require('../../fixtures/usuarios.json');
+    usuarios.forEach(usuario=>{
 
+        it(`Registra novo usuário ${usuario.userName}`,()=>{       
+            //verifica se na tag "a" contém o texto Register Now.
+        cy.registra(`${usuario.email}`,`${usuario.fullName}`,`${usuario.userName}`,`${usuario.password}`);
+        })
+
+    });
 
 
     /*Teste do campo Login*/
