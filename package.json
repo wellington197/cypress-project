@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/wellington197/cypress-project#readme",
   "devDependencies": {
-    "cypress": "^9.6.1",
+    "cypress": "^9.7.0",
     "mochawesome-merge": "^4.2.1"
   },
   "dependencies": {

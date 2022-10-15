@@ -7,12 +7,14 @@ describe('teste e registro de usuários no alura pic',()=>{
 
     })
 
+    //Abaixo, teremos os casos de testes.
+
     it('verifica mensagens de validação da tela cadastro',()=>{
        
         //verifica se na tag "a" contém o texto Register Now.
         cy.contains('a', 'Register now').click();
         cy.contains('button', 'Register').click();
-        cy.contains('ap-vmessage','Email is required!').should('be.visible');
+        cy.contains('ap-vmessage','Email is required!').should('be.visible'); // pega elemento e verifica se testo está visível.
         cy.contains('button', 'Register').click();
         cy.contains('ap-vmessage','User name is required!').should('be.visible');
         cy.contains('ap-vmessage','Full name is required!').should('be.visible');

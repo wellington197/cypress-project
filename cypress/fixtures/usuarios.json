@@ -23,9 +23,16 @@
 },
 {
     "email":"pedro-lucas@hotmail.com.br",
-    "fullName":"Pedro Lucas",
+    "fullName":"Pedro Lucas Souza",
     "userName":"peddro-lucas74",
     "password":"pedrolucas"
+
+}
+{
+    "email":"flavio@alurapic.com.br",
+    "fullName":"Flavio Lucas Souza",
+    "userName":"flavio-lucas777",
+    "password":"123"
 
 }
 ]
