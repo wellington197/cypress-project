@@ -7,7 +7,7 @@ Cypress.Commands.add('login',(nome,senha)=>{
     cy.get('button[type="submit"]').click();
 })
 
-/*Criar comando para testes de login*/
+/*Criar comando para testes de registro*/
 Cypress.Commands.add('registra',(email,fullName,userName,password)=>{
     cy.contains('a', 'Register now').click();
     cy.contains('button', 'Register').click();
