@@ -25,7 +25,7 @@ describe('Buscar fotos e dados',()=>{
             //verifica se na descrição da posição [0] tem o texto FArol iluminado
             expect(res.body[0].description).to.be.equal('Farol iluminado')
             //Testa a duração da resposta
-            expect(res.duration).to.be.lte(tempodeespera) //* lte - menor que
+           // expect(res.duration).to.be.lte(tempodeespera) //* lte - menor que
         })
     
     })
