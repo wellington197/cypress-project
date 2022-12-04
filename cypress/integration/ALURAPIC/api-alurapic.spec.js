@@ -7,6 +7,8 @@ describe('Buscar fotos e dados',()=>{
         */
    
     it('buscar as fotos do Flavio',()=>{
+
+        const tempodeespera=Math.random()*3000;
        
         //verifica se na tag "a" contém o texto Register Now.
         cy.request({
@@ -22,6 +24,8 @@ describe('Buscar fotos e dados',()=>{
             expect(res.body[0]).is.have.property('description')
             //verifica se na descrição da posição [0] tem o texto FArol iluminado
             expect(res.body[0].description).to.be.equal('Farol iluminado')
+            //Testa a duração da resposta
+            expect(res.duration).to.be.lte(tempodeespera) //* lte - menor que
         })
     
     })
@@ -42,7 +46,7 @@ describe('Buscar fotos e dados',()=>{
             expect(res.body).to.have.property('id')
             expect(res.body.id).to.be.equal(1)
             expect(res.body).to.have.property('email')
-            expect(res.body.id).to.be.equal('flavio@alurapic.com.br')
+            expect(res.body.email).to.be.equal('flavio@alurapic.com.br')
         })
     
     })
