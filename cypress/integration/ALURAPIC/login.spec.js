@@ -20,7 +20,7 @@ describe('teste da tela login no alura pic',()=>{
 
 
     /*Teste do campo Login*/
-    it.only('Efetuar login com usuário válido',()=>{
+    it('Efetuar login com usuário válido',()=>{
         cy.login(Cypress.env('userName'),Cypress.env('password'));
         cy.contains('a', '(Logout)').should('be.visible');
     })  

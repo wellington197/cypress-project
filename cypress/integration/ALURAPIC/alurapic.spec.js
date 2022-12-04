@@ -54,8 +54,8 @@ describe('Login e registro de usuários no alura pic',()=>{
 
 
     //referenciar nosso novo arquivo. e buscar na pasta onde tem o Json
-    const usuarios=require('../../fixtures/usuarios.json');
-    usuarios.forEach(usuario=>{
+    const usuarios=require('../../fixtures/usuarios.json'); // busca caminho dos usuários
+    usuarios.forEach(usuario=>{ //para cada elemento do usuário ele faça uma função
 
         it(`Registra novo usuário ${usuario.userName}`,()=>{       
             //verifica se na tag "a" contém o texto Register Now.
